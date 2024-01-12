@@ -1,0 +1,8 @@
+node_modules
+npm-debug.log
+npmrc
+.npmrc
+package-lock.json
+package.json
+tailwind.config.js
+input.css
