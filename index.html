@@ -35,20 +35,15 @@
     const sidebarItems = sidebar.querySelectorAll('.sidebar-item');
 
     let actionSection = 'chapter6';
+    
 
     // call the load markdown function after the document is loaded
     document.addEventListener('DOMContentLoaded', () => {
+        // Scroll to the top of the page
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Load the Markdown file for the first section
         loadMarkdown(actionSection);
     });
-
-    // Add event listeners for each section
-    // ['chapter6', 'chapter7', 'chapter8', 'chapter11'].forEach(sectionId => {
-    //     const section = document.getElementById(sectionId);
-    //     section.addEventListener('click', (event) => {
-    //         event.preventDefault();
-    //         loadMarkdown(sectionId);
-    //     });
-    // });
 
     sidebarItems.forEach(section => {
         section.addEventListener('click', (event) => {
@@ -72,6 +67,9 @@
 
             // Update the actionSection variable
             actionSection = section.id;
+            // Scroll to the top of the page
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Load the Markdown file
             loadMarkdown(actionSection);
         });
     });

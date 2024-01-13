@@ -552,12 +552,12 @@ video {
   top: 0px;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mb-1 {
   margin-bottom: 0.25rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .flex {
@@ -655,9 +655,6 @@ video {
 
 .duration-300 {
   transition-duration: 300ms;
-}
-
-*{
 }
 
 .markdown-body {
